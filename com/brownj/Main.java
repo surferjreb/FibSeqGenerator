@@ -1,9 +1,10 @@
 package com.brownj;
 
+
 import java.util.Scanner;
 
-class Main {
-    
+public class Main {
+
     public static void main(String[] args){
         System.out.println("#######################################");
         Scanner input = new Scanner(System.in);

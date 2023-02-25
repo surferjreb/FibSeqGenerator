@@ -6,10 +6,11 @@ import java.util.List;
 
 
 public class FibSeq {
-    
+
     private int sequenceLength = 0;
     private List<Integer> fib;
 
+    //Constructor
     public FibSeq(int n){
         this.sequenceLength = n;
         this.fib = new ArrayList<>(n);
@@ -35,7 +36,7 @@ public class FibSeq {
 
     private void printFibSequence(){
         for(int i=0; i < fib.size(); i++){
-            String seq = String.format("%d: %d", i, fib.get(i));
+            String seq = String.format("%d: %d%n", i+1, fib.get(i));
             System.out.print(seq);
         }
     }
@@ -55,7 +56,7 @@ public class FibSeq {
 
     @Override
     public String toString(){
-        
         return String.format("the sequence length is: %d", this.sequenceLength);
     }
+
 }
